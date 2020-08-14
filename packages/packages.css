@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "anonymousPro";
+    src: url("anonymousPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "anonymousPro";
+    src: url("anonymousPro-Bold.ttf");
+    font-weight: 700;
+}
+
+
+.main-plus-plan{
+    background: #97dd81;
+    border: 4px solid  green;
+    margin-top: 3.5rem;
+    padding: 20px;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+}
+.main-free-plan{
+    background: #97dd81;
+    border: 4px solid  rgb(230, 75, 75);
+    margin: 15px 0;
+    padding: 20px;
+    width: 80%;
+}
+.main-premium-plan{
+    background: #0f3803;
+    border: 4px solid  green;
+    margin: 15px 0;
+    padding: 20px;
+    width: 80%;
+}
+
+.package__badge {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top:0;
+  margin: 0;
+  border: 1px solid red;
+  background-color: rgb(235, 142, 142);
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: white;
+  transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem); /*defaut rotate element from origin center we can change usinf transform-origin: left */
+  transform-origin: center;
+  width:12rem;
+  text-align: center;
+}
+section > a {
+    text-decoration: none;
+}
+main {
+    padding: 1px;
+    margin-top: 20px;
+}
+
+.main-plus-plan h1 {
+    color: black;
+    text-decoration: none;
+}
+
+.main-plus-plan h2 {
+    color: rgb(141, 122, 122);
+    text-decoration: none;
+}
+
+.main-plus-plan p {
+    background: white;
+    color: green;
+    border: 1px solid green;
+    padding:10px;
+    /*font-family: "anonymousPro",sans-serif;
+    font-weight: 700;*/
+    line-height: 1;
+    /*text-decoration: underline dotted red;
+    text-decoration: underline wavy red;*/
+
+    
+    /* horizontal, vertical, shadow sharping, color
+    text-shadow: 5px 5px 2px rgb(189, 166, 166)*/
+
+    /* shortend   font-style,fonthwieght and font-variant  should before size;,size/line-hieght,fontfamily
+    font: italic small-caps 700 1.2rem/2 "anonymousPro",sans-serif*/
+
+    font-size: 1.2rem;
+}
+
+.main-free-plan h1 {
+    color: black;
+    text-decoration: none;
+}
+
+.main-free-plan h2 {
+    color: rgb(141, 122, 122);
+    text-decoration: none;
+}
+
+.main-free-plan p {
+    background: white;
+    color: green;
+    border: 1px solid green;
+    text-decoration: none;
+    padding:10px;
+}
+
+.main-premium-plan h1 {
+    color: white;
+    text-decoration: none;
+}
+
+.main-premium-plan h2 {
+    color: rgb(141, 122, 122);
+}
+
+.main-premium-plan p {
+    background: white;
+    color: green;
+    border: 1px solid green;
+    text-decoration: none;
+    padding:10px;
+}
+
+.background {
+    background: url("../images/plans-background.jpg") center/cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    filter: grayscale();
+}
+
+
+@media (min-width:40rem){
+    main {
+        max-width: 1000px;
+    }
+}
